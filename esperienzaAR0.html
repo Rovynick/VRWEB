@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Hello World</title>
+    <script src="js/vrframe.js"></script>
+  </head>
+  <body>
+    <h1>PRIMO SITO IN VR</h1>
+    <a-scene embedded>
+      
+      <a-box scale = "1 2 1" position="-1 1.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky src="img/skie.jpg"></a-sky>
+      
+      
+      
+      <a-assets>
+        <a-asset-item id="tree" src="tree.gltf"></a-asset-item>
+        </a-assets>
+        
+        <a-gltf-model src = "#tree"></a-gltf-model> 
+
+      
+      <!-- Using the asset management 
+        
+        
+
+        
+        
+        system. -->
+
+    
+ 
+      <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+      
+
+
+      <a-entity position="0 0 -6" rotation="0 0 0" animation="easing : linear; property: rotation; to: 0 360 0; loop: true; dur: 10000">
+        <a-sphere position="5 0 0" color="mediumseagreen"></a-sphere>
+    </a-entity>
+    </a-scene>
+  </body>
+</html>
